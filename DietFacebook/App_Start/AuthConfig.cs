@@ -22,9 +22,9 @@ namespace DietFacebook
             //    consumerKey: "",
             //    consumerSecret: "");
 
-            //OAuthWebSecurity.RegisterFacebookClient(
-            //    appId: "",
-            //    appSecret: "");
+            OAuthWebSecurity.RegisterFacebookClient(
+                appId: "	497795850273100",
+                appSecret: "803354a8f35fea92676206a048060d8a");
 
             //OAuthWebSecurity.RegisterGoogleClient();
         }
