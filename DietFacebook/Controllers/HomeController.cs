@@ -15,6 +15,17 @@ namespace DietFacebook.Controllers
             return View();
         }
 
+        public ActionResult SaveFacebookToken()
+        {
+            string token = ControllerContext.HttpContext.Request["accessToken"];
+
+            ControllerContext.HttpContext.Session["AccessToken"] = token;
+
+            ViewBag.Message = "Token [" + token + "] saved in Session.";
+
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your app description page.";
